@@ -17,8 +17,6 @@ RUN wget -q -O /tmp/instantclient-basic-linux.x64-12.1.0.2.0.zip http://media.ma
     mkdir /apex_$APEX_VERSION/ && \
     wget -q -O apex_$APEX_VERSION.zip-aa http://media.matmagoc.com/oracle/apex_$APEX_VERSION.zip-aa && \
     wget -q -O apex_$APEX_VERSION.zip-ab http://media.matmagoc.com/oracle/apex_$APEX_VERSION.zip-ab
-ADD apex* /apex_$APEX_VERSION/
-ADD apex* /apex_$APEX_VERSION/
 ADD entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
